@@ -152,7 +152,7 @@ setTimeout(() => {
         
         const text = document.createElement('div');
         text.style.cssText = 'color: #e5e7eb; font-size: 16px; margin-bottom: 8px; line-height: 1.5;';
-        text.textContent = 'The Drift Boss Flare menu has loaded. Would you like to open the UI?';
+        text.textContent = 'Flare Menu Has Loaded. Would You Like To Open The UI?';
         
         const sub = document.createElement('div');
         sub.style.cssText = 'color: #9ca3af; font-size: 14px; margin-bottom: 24px; text-transform: capitalize;';
