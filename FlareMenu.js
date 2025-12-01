@@ -7,7 +7,12 @@ setTimeout(() => {
         "booster1": 999,
         "booster2": 999,
         "booster3": 999,
-        "ko": 0
+        "ko": 0,
+		"sound": 0.7,
+		"music": 0.3,
+		"hasShownTutorial": true,
+		"currentTip": 0,
+		"hasShownBoosterTutorial": false
     };
     
     const carDatabase = {
