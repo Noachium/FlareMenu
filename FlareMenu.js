@@ -12,7 +12,7 @@ setTimeout(() => {
 		"music": 0.3,
 		"hasShownTutorial": true,
 		"currentTip": 0,
-		"hasShownBoosterTutorial": false
+		"hasShownBoosterTutorial": true		
     };
     
     const carDatabase = {
@@ -406,7 +406,7 @@ setTimeout(() => {
         modal.innerHTML = `
             <div style="text-align: center; margin-bottom: 32px;">
                 <h1 style="font-size: 36px; font-weight: bold; background: linear-gradient(to right, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 0 0 12px 0;" class="title-case-custom">
-                    Flare Menu 
+                    Flare Menu
                 </h1>
                 <p style="color: #9ca3af; font-size: 18px; margin: 0;" class="title-case-custom">
                     Version: 1.0.0 Build Number: 1
@@ -464,7 +464,7 @@ setTimeout(() => {
                     <div style="background: rgba(59, 130, 246, 0.1); padding: 16px; border-radius: 12px; border: 1px solid rgba(59, 130, 246, 0.3); margin-bottom: 16px;">
                         <label style="display: flex; align-items: center; gap: 12px; cursor: pointer; color: #d1d5db; font-size: 15px;">
                             <input type="checkbox" id="insaneStatsCheckbox" class="custom-checkbox" checked>
-                            <span class="title-case-custom" style="font-weight: 600; color: #93c5fd;">Insane Stats</span>
+                            <span class="title-case-custom" style="font-weight: 600; color: #93c5fd;">Insane Tweaks</span>
                             <span style="color: #9ca3af; font-size: 13px;"></span>
                         </label>
                     </div>
@@ -540,7 +540,7 @@ setTimeout(() => {
                 <ul style="color: #d1d5db; font-size: 14px; line-height: 1.8; margin: 0; padding-left: 20px;">
                     <li class="title-case-custom">Enter The Car ID (1-20) Or Full Car Name</li>
                     <li class="title-case-custom">Review Your Selection In The Confirmation Screen</li>
-                    <li class="title-case-custom">Toggle "Insane Stats" To Get An Insane Score, And An Insane Amount Of Coins & Boosters</li>
+                    <li class="title-case-custom">Toggle "Insane Tweaks" To Get An Insane Score, Bypass The Tutorial, And Get An Insane Amount Of Coins & Boosters</li>
                     <li class="title-case-custom">Click The "Confirm" Button To Apply Changes And Reload The Game</li>
                     <li class="title-case-custom">The Game May Show "Locked" As The Car's Status But The Car Will Work When You Press Play</li>
                     <li class="title-case-custom">To Reset Your In-Game Progress, You Need To Delete Your Browsing Data</li>
@@ -609,17 +609,18 @@ setTimeout(() => {
                 
                 if (insaneStatsEnabled) {
                     statsDisplay.innerHTML = `
-                        <div class="title-case-custom" style="color: #93c5fd; font-weight: 600; margin-bottom: 8px;">Insane Stats Enabled:</div>
+                        <div class="title-case-custom" style="color: #93c5fd; font-weight: 600; margin-bottom: 8px;">Insane Tweaks Enabled:</div>
                         <div style="padding-left: 16px;">
                             <div>• 999,999,999,999 Coins</div>
                             <div>• 999,999,999,999 Score</div>
                             <div>• 999 Of All 3 Boosters</div>
                             <div>• All Cars Unlocked</div>
+							<div>• Bypass Tutorial</div>
                         </div>
                     `;
                 } else {
                     statsDisplay.innerHTML = `
-                        <div class="title-case-custom" style="color: #9ca3af; font-weight: 600;">Just The Car (No Stats Changes)</div>
+                        <div class="title-case-custom" style="color: #9ca3af; font-weight: 600;">Just The Car (No Tweak Changes)</div>
                     `;
                 }
                 
@@ -641,7 +642,7 @@ setTimeout(() => {
                 
                 if (insaneStatsEnabled) {
                     localStorage.setItem('mjs-drift-boss-game-v1.0.1-dailyreward', JSON.stringify(gameData));
-                    showNotification('✓ Car & Insane Stats Applied Successfully!', 'success');
+                    showNotification('✓ Car & Insane Tweaks Applied Successfully!', 'success');
                 } else {
                     const existingData = localStorage.getItem('mjs-drift-boss-game-v1.0.1-dailyreward');
                     let minimalData = existingData ? JSON.parse(existingData) : {};
