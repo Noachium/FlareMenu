@@ -401,10 +401,10 @@ setTimeout(() => {
         modal.innerHTML = `
             <div style="text-align: center; margin-bottom: 32px;">
                 <h1 style="font-size: 36px; font-weight: bold; background: linear-gradient(to right, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 0 0 12px 0;" class="title-case-custom">
-                    Flare Mods For Drift Boss
+                    Flare Menu 
                 </h1>
                 <p style="color: #9ca3af; font-size: 18px; margin: 0;" class="title-case-custom">
-                    
+                    V1.0.0
                 </p>
             </div>
             
