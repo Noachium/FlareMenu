@@ -404,7 +404,7 @@ setTimeout(() => {
                     Flare Menu 
                 </h1>
                 <p style="color: #9ca3af; font-size: 18px; margin: 0;" class="title-case-custom">
-                    V1.0.0
+                    Version: 1.0.0 Build Number: 1
                 </p>
             </div>
             
